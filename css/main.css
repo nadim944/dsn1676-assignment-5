@@ -1,5 +1,99 @@
-.to-do-list {
-    text-align: center;
-    font-size: 2em;
-    margin-top: 1em;
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html {
+	box-sizing: border-box;
+    -moz-text-size-adjust-100%;
+	-ms-text-size-adjust-100%;
+	-webkit-text-size-adjust-100%;
+	-text-size-adjust-100%;
+    font-family: sans-serif;
+}
+
+*, *::before, *::after; {
+	box-sizing: inherit;
+}
+
+.input{
+  padding: 1em 2em;
+  margin: auto;
+  border-top: solid 2px #EEEEEE;
+  border-left: solid 2px #EEEEEE;
+  border-right: solid 2px #EEEEEE;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: rgb(242, 242, 242);
+  width: 20em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list-holder{
+  padding: 1.5em 2em;
+  margin: auto;
+  border-bottom: solid 2px #EEEEEE;
+  border-left: solid 2px #EEEEEE;
+  border-right: solid 2px #EEEEEE;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 20em;
+  overflow: hidden;
+}
+
+.list{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.delete{
+  background-image: url();
+  border: none;
+  float: right;
+  text-align: center;
+  margin: 0;
+  height: 3em;
+  width: 2.1em;
+  padding: .52em;
+  background-color: rgb(233, 233, 233);
+  -webkit-transition: width 2s;
+}
+
+.label{
+  font-weight: bold;
+  display: block;
+}
+
+.main-input{
+  float: left;
+  padding: .42em;
+  width: 14.3em;
+  margin: 0;
+}
+
+.add{
+  float: right;
+  text-align: center;
+  margin: 0;
+  width: 4.6em;
+  padding: .52em;
+  border: none;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  background-color: rgb(209, 209, 209);
+  -webkit-transition: width 2s;
+}
+
+.add:hover{
+background-color: rgb(113, 113, 113);
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #b1b1b1;
 }
